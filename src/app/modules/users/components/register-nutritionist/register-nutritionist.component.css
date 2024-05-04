@@ -1,0 +1,182 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    padding: 20px 160px 0px 160px;
+}
+
+.title {
+    text-align: center;
+
+    border: 3px green;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.image-upload {
+    padding: 40px 0px 20px 60px;
+}
+
+
+#input-image {
+    display: none;
+}
+
+.icon-person-add {
+    font-size: 80px;
+
+}
+
+mat-card {
+    max-width: 100%;
+}
+
+.title-profile {
+    font-size: 18px;
+    height: 25px;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(124, 124, 124);
+}
+
+.card-profile {
+    padding: 20px 50px 0px 50px;
+}
+
+.field-name {
+    width: 60%;
+}
+
+.field-email {
+    width: 60%;
+}
+
+.field-cpf {
+    width: 60%;
+}
+
+.field-tel {
+    width: 60%;
+}
+
+.field-crn {
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+.button-delete-local {
+    text-align: right;
+}
+
+.button-delete-local button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.field-service {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-8 {
+    width: 66%;
+}
+
+.local-div {
+    padding-bottom: 30px;
+}
+
+.service-section {
+    padding-bottom: 20px;
+}
+
+.field-cep {
+    width: 50%;
+}
+
+.field-state {
+    width: 70%;
+}
+
+.field-city {
+    width: 70%;
+}
+
+.field-address {
+    width: 80%;
+}
+
+.field-complement {
+    width: 70%;
+}
+
+.field-district {
+    width: 70%;
+}
+
+.field-password {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.field-confirm-password {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.logo-upload {
+    display: block;
+    width: 6%;
+}
+
+#input-image-logo {
+    display: none;
+}
+
+.logo-upload {
+    display: block;
+    
+}
+.logo-upload .input-image-logo
+{
+    justify-content: center;
+    
+}
+
+.signature-upload {
+    display: block;
+    width: 8%;
+    margin-left: 20px;
+}
+
+#input-image-signature {
+    display: none;
+}
+
+.upload-images {
+    display: flex;
+
+}

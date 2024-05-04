@@ -1,0 +1,67 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.title {
+
+    text-align: center;
+    padding: 20px 0px 50px 0px
+}
+.title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+.search-input {
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.search-input mat-form-field {
+    width: 70%;
+
+}
+.client-data
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.client-image {
+    margin-left: 18%;
+}
+.client-details
+{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.client-buttons
+{
+    padding-left: 20px;
+    float: left;
+    padding-top: 15px;
+}
+.client-details a:hover
+{
+       color: rgb(6, 73, 99);
+}
+.client-details a 
+{
+   text-decoration: none;
+   color: rgb(25, 158, 211);
+}

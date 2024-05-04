@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="title">
+                <h1>AGENDAR CONSULTA</h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="search-form">
+                <mat-form-field appearance="legacy"  type floatLabel="never">
+                    <mat-icon matSuffix>search</mat-icon>
+                    <mat-label>Buscar cliente pelo nome</mat-label>
+                    <input matInput [(ngModel)] = "name">
+                </mat-form-field>
+
+            </div>
+            <div class="title-client">
+                <p>Cliente</p>
+            </div>
+            <mat-radio-group>
+                <mat-radio-button labelPosition='after' *ngFor="let client of clients" [value]="client">
+                    <div class="client-data">
+                            <img src="../assets/user2.png" style="height: 60px; width: 60px;" alt="">
+                            <p>{{client}}</p>
+                    </div>
+                </mat-radio-button>
+            </mat-radio-group>
+            <p *ngIf = "name !==''">O nome é {{name}}</p>
+        </div>
+        <div class="col-6">
+            <div class="btn-create">
+                <button mat-raised-button color="primary">Cadastrar novo Cliente</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <form class="form-consult">
+                <div class="form-field-attendance">
+                    <mat-form-field class="field-attendance" appearance="standard">
+                        <mat-label>Tipo de Atendimento Nutricional</mat-label>
+                        <mat-select>
+                            <mat-option value="1">
+                                Presencial
+                            </mat-option>
+                            <mat-option value="2">
+                                Online
+                            </mat-option>
+
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-field-date">
+                    <mat-form-field class="field-date" appearance="standard">
+                        <mat-label>Data e Horário *</mat-label>
+                        <input class="input-date" matInput [matDatepicker]="pickerFinal">
+                        <mat-datepicker-toggle matSuffix [for]="pickerFinal"></mat-datepicker-toggle>
+                        <mat-datepicker #pickerFinal type="datetime" [twelveHour]="false"></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="form-field-date">
+                    <mat-form-field class="field-local" appearance="standard">
+                        <mat-label>Nome do Local de Atendimento *</mat-label>
+                        <mat-select>
+                            <mat-option value="1">
+                                Cabula
+                            </mat-option>
+                            <mat-option value="2">
+                                Sussuarana
+                            </mat-option>
+                            <mat-option value="3">
+                                IAPI
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="field-send-email">
+                    <p>Deseja enviar email de boas vindas? <mat-slide-toggle color="primary">
+                        </mat-slide-toggle>
+                    </p>
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="btn-group">
+                <div class="btn-cancel">
+                    <button mat-stroked-button color="warn">Cancelar</button>
+                </div>
+                <div class="btn-save">
+                    <button mat-raised-button color="primary">Salvar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

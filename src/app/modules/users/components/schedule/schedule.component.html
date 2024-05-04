@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="title">
+            <h1>CONSULTAR MINHA AGENDA</h1>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="calendar">
+        <full-calendar [options]="calendarOptions"></full-calendar>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <mat-card class="card-reminder">
+            <mat-card-header>
+                <h1>Lembretes</h1>
+            </mat-card-header>
+            <mat-card-content>
+
+                <mat-list>
+                    <mat-list-item>
+                        <ul (click)="openCheckDialog()">
+                            <li>
+                                <mat-icon>
+                                    info
+                                </mat-icon>
+                                <p>
+                                    Finalizar dieta de Maria
+                                </p>
+
+                            </li>
+                        </ul>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-6">
+        <mat-card class="card-chat">
+            <mat-card-header>
+                <h1>
+                    Chat
+                </h1>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item>
+                        <ul>
+                            <li>
+                                Sem Mensagem
+                            </li>
+                        </ul>
+                    </mat-list-item>
+                </mat-list>
+
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+</div>

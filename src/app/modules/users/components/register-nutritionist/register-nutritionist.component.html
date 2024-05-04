@@ -1,0 +1,242 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="header">
+                <div class="title">
+                    MEU PERFIL
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="card-profile">
+
+        <mat-card>
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-profile">
+                        Informações Gerais
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="image-upload">
+                        <input type="file" id="input-image" accept="image/png, image/jpeg">
+                        <label for="input-image">
+                            <mat-icon class="icon-person-add" aria-hidden="false">person_add</mat-icon>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="field-name" appearance="standard">
+                        <mat-label>
+                            Nome Completo*
+                        </mat-label>
+                        <input type="text" matInput placeholder="Nome">
+                    </mat-form-field>
+                </div>
+
+                <div class="col-6">
+                    <mat-form-field class="field-email" appearance="standard">
+                        <mat-label>
+                            Email
+                        </mat-label>
+                        <input type="email" matInput placeholder="email">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="field-tel" appearance="standard">
+                        <mat-label>
+                            Telefone
+                        </mat-label>
+                        <input type="tel" matInput placeholder="(DDD) XXXX-XXXX">
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="field-cpf" appearance="standard">
+                        <mat-label>
+                            CPF
+                        </mat-label>
+                        <input type="cpf" matInput placeholder="XXX.XXX.XXX-XX">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="field-crn" appearance="standard">
+                        <mat-label>
+                            Número do CRN
+                        </mat-label>
+                        <input type="text" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div *ngFor="let item of order  | slice:0:3; let i=index" class="local-div">
+                <mat-card id="card-local">
+                    <div class="row">
+                        <div class="col-8">
+                            <mat-form-field class="field-service" appearance="standard">
+                                <mat-label>
+                                    Nome do Local de Atendimento*
+                                </mat-label>
+                                <input type="text" matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-4">
+                            <div class="button-delete-local">
+                                <button mat-icon-button (click)="remove(i)" color="warn">
+                                    <mat-icon>close</mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <section class="service-section">
+                                <mat-checkbox class="service-online" color="primary">Atendimento Online</mat-checkbox>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <mat-form-field class="field-cep" appearance="standard">
+                                <mat-label>
+                                    CEP
+                                </mat-label>
+                                <input type="text" matInput placeholder="Cep">
+                            </mat-form-field>
+                        </div>
+
+
+                        <div class="col-4">
+                            <mat-form-field class="field-state" appearance="standard">
+                                <mat-label>
+                                    Estado
+                                </mat-label>
+                                <input type="text" matInput placeholder="Estado">
+                            </mat-form-field>
+                        </div>
+
+
+                        <div class="col-4">
+                            <mat-form-field class="field-city" appearance="standard">
+                                <mat-label>
+                                    Cidade
+                                </mat-label>
+                                <input type="text" matInput placeholder="Cidade">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <mat-form-field class="field-address" appearance="standard">
+                                <mat-label>
+                                    Endereço
+                                </mat-label>
+                                <input type="text" matInput placeholder="Endereço">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-6">
+                            <mat-form-field class="field-number" appearance="standard">
+                                <mat-label>
+                                    Número
+                                </mat-label>
+                                <input type="text" matInput placeholder="Número">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <mat-form-field class="field-complement" appearance="standard">
+                                <mat-label>
+                                    Complemento
+                                </mat-label>
+                                <input type="text" matInput placeholder="Complemento">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-6">
+                            <mat-form-field class="field-district" appearance="standard">
+                                <mat-label>
+                                    Bairro
+                                </mat-label>
+                                <input type="text" matInput placeholder="Bairro">
+                            </mat-form-field>
+
+                        </div>
+                    </div>
+
+                </mat-card>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="button-local">
+                        <button mat-raised-button id="newLocal" *ngIf="order.length < 3" (click)="append()"
+                            color="primary">Adicionar novo Local</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="field-password" appearance="standard">
+                        <mat-label>
+                            Redefinir Senha
+                        </mat-label>
+                        <input type="text" matInput placeholder="">
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="field-confirm-password" appearance="standard">
+                        <mat-label>
+                            Confirme sua Senha
+                        </mat-label>
+                        <input type="text" matInput placeholder="">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="upload-images">
+                        <div class="logo-upload">
+                            <span>Inserir Logomarca</span>
+                            <input type="file" id="input-image-logo" accept="image/png, image/jpeg">
+                            <label for="input-image-logo">
+                                <mat-icon class="icon-person-add" aria-hidden="false">add_box</mat-icon>
+                            </label>
+                        </div>
+                         <div class="signature-upload">
+                            <span>Inserir Assinatura Digital</span>
+                            <input type="file" id="input-image-signature" accept="image/png, image/jpeg">
+                            <label for="input-image-signature">
+                                <mat-icon class="icon-person-add" aria-hidden="false">add_box</mat-icon>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </mat-card>
+
+    </div>
+
+
+
+
+</div>

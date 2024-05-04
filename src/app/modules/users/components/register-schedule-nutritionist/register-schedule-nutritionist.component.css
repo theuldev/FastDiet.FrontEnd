@@ -1,0 +1,77 @@
+.row {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.title {
+
+    text-align: center;
+    padding: 20px 20px 50px 20px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+mat-label {
+    font-size: 16px;
+
+}
+
+.col-12 {
+    width: 100%;
+}
+
+mat-form-field {
+    width: 50%;
+    padding:20px;
+}
+.field-date-initial
+{
+    padding-top: 100px;
+}
+.calendar 
+{
+    width: 70%;
+}
+.col-12
+{
+    width: 100%;
+}
+.btn-group
+{
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+.btn-cancel {
+    width: 100%;
+
+}
+.btn-cancel button {
+    width: 100%;
+}
+
+.btn-save {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.btn-save button {
+    width: 100%;
+}

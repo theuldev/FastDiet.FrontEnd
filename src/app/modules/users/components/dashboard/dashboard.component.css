@@ -1,0 +1,67 @@
+
+mat-icon {
+    color: white;
+}
+mat-form-field 
+{
+    width:70%;
+    float: right;
+    
+}
+
+.create-icon {
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.button-raised-create {
+    text-align: center;
+    width: 25vh;
+    height: 7vh;
+    float: left;
+}
+.button
+{
+    padding-left:10% ;
+}
+
+.container {
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    min-width: 280px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.col-12
+{
+    width: 100%;
+    padding-bottom: 10%;
+}
+.col-6{
+    width: 50%; 
+}
+.col-9
+{
+    width: 70%;
+}
+.col-3
+{
+    width: 30%;
+}
+.row p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,159 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+.title {
+
+    text-align: center;
+    padding: 20px 0px 50px 0px
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.search-form mat-form-field {
+    width: 70%;
+
+}
+
+.search-form {
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-create {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.btn-create button {
+    max-width: 30%;
+}
+
+mat-radio-group {
+    position: relative;
+    left: 15%;
+}
+
+mat-radio-button {
+    display: block;
+    width: 50%;
+}
+
+
+.client-data {
+    display: flex;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+mat-slide-toggle {
+    margin-left: 10px;
+}
+
+mat-radio-button img {
+    padding: 5px;
+}
+mat-radio-button p {
+    padding: 25px 0px 0px 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.title-client {
+    margin-top: 20px;
+    position: relative;
+    left: 15%;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.form-consult {
+    margin-top: 80px;
+    margin-left: 7%;
+    display: block;
+}
+
+.field-attendance {
+    width: 20%;
+}
+
+.field-date {
+    width: 20%;
+}
+
+.field-local {
+    width: 20%;
+}
+
+.field-send-email {
+    margin-top: 20px;
+}
+
+.field-send-email p {
+    padding-top: 12px;
+}
+
+
+
+.btn-group {
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn-cancel {
+    width: 100%;
+
+}
+
+.btn-cancel button {
+    width: 100%;
+}
+
+.btn-save {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.btn-save button {
+    width: 100%;
+}

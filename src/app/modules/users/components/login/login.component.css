@@ -1,0 +1,30 @@
+.content-body {
+   min-height: 100%;
+   padding: 60px;
+   display: block;
+}
+
+.mat-card {
+   max-width: 600px;
+   margin: auto;
+   max-height: 600px;
+   text-align: center;
+}
+
+.username-input {
+   padding-top: 10px;
+}
+
+.username-field {
+   width: 40%;
+   padding-bottom: 20px;
+}
+
+.password-field {
+   width: 40%;
+   padding-bottom: 20px;
+}
+
+.button-login {
+   width: 40%;
+}

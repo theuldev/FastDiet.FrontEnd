@@ -1,0 +1,96 @@
+.content-body {
+  height: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.user_image {
+  border-radius: 50%;
+  padding-right: 10px;
+}
+
+mat-sidenav-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+mat-menu {
+  width: 10px;
+}
+
+mat-toolbar {
+  height: 10vh;
+}
+
+mat-sidenav a {
+  text-decoration: none;
+}
+
+mat-sidenav {
+  width: 40vh;
+  border: 0;
+
+}
+.routing-home
+{
+  display: flex;
+  padding-left: 40px;
+    align-items: center;
+}
+.routing-home button
+{
+  padding-left: 40px;
+}
+.sidenav-header {
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+mat-list-item {}
+
+.sidenav-logo {
+  padding: 15px 0px 0px 20px;
+}
+
+mat-accordion mat-expansion-panel-header {
+  text-decoration: none;
+}
+
+mat-accordion :hover {
+  color: rgb(43, 98, 226);
+}
+
+
+::ng-deep .mat-drawer-inner-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #8b8b8b;
+  
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar {
+  
+  width: 10px;
+  height: 10px;
+  background: #8b8b8b;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 10px;
+}

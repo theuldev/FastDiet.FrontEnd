@@ -1,0 +1,172 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    padding: 20px 160px 0px 160px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0px 50px 0px
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    padding-top: 20px;
+    width: 33%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+mat-form-field {
+    padding: 10px;
+}
+
+.field-name {
+    padding-left: 21%;
+    width: 100%;
+}
+
+.field-birthdate {
+    float: right;
+    width: 50%;
+}
+
+.field-cpf {
+    float: left;
+    width: 60%;
+}
+
+.field-gender {
+    padding-left: 7%;
+}
+
+.field-pregnant {
+    padding-left: 50px;
+}
+
+.field-lactating {
+    padding-left: 50px;
+}
+
+.field-athlete {
+    padding-left: 50px;
+}
+
+.field-career {
+    padding-left: 14%;
+    width: 50%;
+}
+
+.field-health-insurance {
+    width: 50%;
+}
+
+.field-email {
+    padding-left: 21%;
+    width: 70%;
+}
+
+.field-tel {
+    width: 60%;
+    padding-left: 15%;
+}
+
+.field-phone {
+    width: 60%;
+}
+
+.field-cep {
+    padding-left: 21%;
+    width: 60%;
+}
+
+.field-state {
+    width: 60%;
+}
+
+.field-city {
+    width: 60%;
+}
+
+.field-address {
+    padding-left: 14%;
+    width: 50%;
+}
+
+.field-number {
+    padding-left: 20%;
+}
+
+.field-address-complement {
+    padding-left: 14%;
+    width: 50%;
+}
+
+.field-district {
+    float: left;
+    width: 50%;
+}
+
+.remember-login {
+    padding-top: 30px;
+    padding-left: 14%;
+}
+
+mat-slide-toggle {
+    padding-left: 20px;
+}
+
+.field-login {
+    width: 70%;
+}
+
+.field-password {
+    width: 50%;
+
+}
+
+.send-email {
+    padding-left: 7%;
+}
+
+.btn-group {
+    width: 30%;
+    float: right;
+    padding-right: 12%;
+    display: inline;
+    padding-bottom: 20px;
+}
+
+.button-send {
+    width: 40%;
+}
+
+.button-cancel {
+    margin-right: 20px;
+    width: 40%;
+}
