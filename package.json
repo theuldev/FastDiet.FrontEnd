@@ -27,6 +27,7 @@
     "@matheo/datepicker": "^13.0.0-beta.1",
     "@popperjs/core": "^2.11.6",
     "rxjs": "~7.5.0",
+    "schematics-scss-migrate": "^2.3.17",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

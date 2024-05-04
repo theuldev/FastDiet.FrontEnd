@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-register-nutritionist',
   templateUrl: './register-nutritionist.component.html',
-  styleUrls: ['./register-nutritionist.component.css'],
+  styleUrls: ['./register-nutritionist.component.scss'],
 })
 export class RegisterNutritionistComponent implements OnInit {
   order: any = [1];
