@@ -1,0 +1,162 @@
+<div class="wrapper">
+    <mat-sidenav-container autosize>
+        <mat-sidenav class="sidenav-drawer" mode="side" [(opened)]="opended">
+            <div class="sidenav-header">
+                <a href="#">Logomarca</a>
+
+            </div>
+
+            <mat-list>
+
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>
+                                Agenda
+                            </p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="/consultar">Consultar Agenda</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="/registrar-agenda">Adicionar minha Agenda</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="/consultar-agenda">Agendar Consulta</a>
+                        </mat-list-item>
+
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>
+                                Clientes
+                            </p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="/registrar">Cadastrar Cliente</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="/pesquisar">Buscar Cliente</a>
+                        </mat-list-item>
+
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>Questionário Pré-Consulta</p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="#">Ver Questionários</a>
+                        </mat-list-item>
+
+
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>
+                                Consulta
+                            </p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="#">Nova Consulta</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Alterar Dados de Consulta</a>
+                        </mat-list-item>
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>
+                                Controle Financeiro
+                            </p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="#">Emitir Recibo</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Relatório de Atendimentos</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Relatórios de Lucros</a>
+                        </mat-list-item>
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
+                    <mat-expansion-panel [class.mat-expansion-panel]="false">
+                        <mat-expansion-panel-header>
+                            <p>
+                                Interação com o cliente
+                            </p>
+                        </mat-expansion-panel-header>
+                        <mat-list-item>
+                            <a href="#">Alerta de Hidratação</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Chat</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Configurar E-mail</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Lembretes</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Enviar Plano Alimentar</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Enviar Avaliação Antropométrica</a>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a href="#">Enviar Documento</a>
+                        </mat-list-item>
+
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <mat-toolbar color="primary">
+                <button mat-icon-button color="basic" (click)="opended=!opended">
+                    <mat-icon *ngIf="!opended">menu</mat-icon>
+                    <mat-icon *ngIf="opended">close</mat-icon>
+                </button>
+
+                <div class="routing-home" *ngIf="!opended">
+                    <p class="sidenav-logo">LOGOMARCA</p>
+                    <button mat-icon-button routerLink="/dashboard">
+                        <mat-icon>home</mat-icon>
+                    </button>
+                </div>
+
+                <span class="spacer"></span>
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <img src="../assets/user.png" class="user_image" style="height: 60px; width: 60px;" alt="user">
+                    <span>
+                        Emanuelly Santiago
+                    </span>
+                    <mat-icon role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                        aria-hidden="true" data-mat-icon-type="font">arrow_drop_down</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" xPosition="before">
+                    <button mat-menu-item routerLink="/meuperfil">Meu Perfil</button>
+                    <button mat-menu-item>
+                        Gestão de Assinatura
+                    </button>
+                    <button mat-menu-item>Sair</button>
+                </mat-menu>
+            </mat-toolbar>
+            <main class="wrapper-content">
+                <ng-content></ng-content>
+            </main>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</div>

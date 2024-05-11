@@ -5,7 +5,7 @@ import {
   MAT_DIALOG_DATA,
 } from '@angular/material/dialog';
 import { CalendarOptions } from '@fullcalendar/angular';
-import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',

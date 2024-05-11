@@ -1,0 +1,31 @@
+
+::ng-deep .mat-drawer-inner-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #8b8b8b;
+
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar {
+
+  width: 10px;
+  height: 10px;
+  background: #8b8b8b;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 10px;
+}
