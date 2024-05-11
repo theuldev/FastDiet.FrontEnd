@@ -61,11 +61,6 @@ FullCalendarModule.registerPlugins([dayGridPlugin, interactionPlugin, timeGridPl
   ],
   imports: [
     UsersModule,
-    
-   
-    
-  
-
 
   ],
   exports: [],

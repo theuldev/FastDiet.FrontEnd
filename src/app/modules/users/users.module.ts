@@ -31,7 +31,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDatepickerModule } from '@matheo/datepicker';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FullCalendarModule } from '@fullcalendar/angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app/app-routing.module';
 import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
@@ -83,7 +82,6 @@ const AngularMaterial = [
     AngularMaterial,
     BrowserAnimationsModule,
     CommonModule,
-    FullCalendarModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
