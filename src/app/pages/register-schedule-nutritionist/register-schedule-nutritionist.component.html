@@ -10,17 +10,12 @@
         <div class="col-6">
             <form action="">
                 <mat-form-field class="field-date-initial" appearance="standard">
-                    <mat-label>Data e Horário Inicial *</mat-label>
-                    <input class="input-date-final" matInput [matDatepicker]="picker">
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker type="datetime" #picker [twelveHour]="false"></mat-datepicker>
+           
                 </mat-form-field>
 
                 <mat-form-field class="field-date-final" appearance="standard">
                     <mat-label>Data e Horário Final *</mat-label>
-                    <input class="input-date-final" matInput [matDatepicker]="pickerFinal">
-                    <mat-datepicker-toggle matSuffix [for]="pickerFinal"></mat-datepicker-toggle>
-                    <mat-datepicker #pickerFinal type="datetime" [twelveHour]="false"></mat-datepicker>
+               
                 </mat-form-field>
                 <mat-form-field class="field-local" appearance="standard">
                     <mat-label>Nome do Local de Atendimento *</mat-label>
@@ -40,7 +35,7 @@
         </div>
         <div class="col-6">
             <div class="calendar">
-                <full-calendar [options]="calendarOptions"></full-calendar>
+                calendar
             </div>
 
         </div>

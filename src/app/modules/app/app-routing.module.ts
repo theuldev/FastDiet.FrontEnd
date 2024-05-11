@@ -7,7 +7,6 @@ import { RegisterClientComponent } from 'src/app/pages/register-client/register-
 import { RegisterNutritionistComponent } from 'src/app/pages/register-nutritionist/register-nutritionist.component';
 import { RegisterScheduleNutritionistComponent } from 'src/app/pages/register-schedule-nutritionist/register-schedule-nutritionist.component';
 import { ScheduleConsultComponent } from 'src/app/pages/schedule-consult/schedule-consult.component';
-import { ScheduleComponent } from 'src/app/pages/schedule/schedule.component';
 import { SearchClientComponent } from 'src/app/pages/search-client/search-client.component';
 
 

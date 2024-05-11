@@ -28,7 +28,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatDatepickerModule } from '@matheo/datepicker';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -62,7 +61,6 @@ const AngularMaterial = [
   MatSidenavModule,
   MatListModule,
   MatDividerModule,
-  MatDatepickerModule,
   MatNativeDateModule,
   MatRippleModule,
   MatSelectModule,
