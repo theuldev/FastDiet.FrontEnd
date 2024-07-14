@@ -1,37 +1,39 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="title">
-                <h1>
-                    BUSCAR CLIENTES
-                </h1>
+<app-wrapper>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h1>
+                        BUSCAR CLIENTES
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="search-input">
+                    <mat-form-field appearance="outline" floatLabel="auto">
+                        <mat-icon matSuffix>search</mat-icon>
+                        <mat-label>Buscar cliente pelo nome</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="client-data">
+                <div class="client-image">
+                    <img src="../assets/user2.png" style="height: 60px; width: 60px;" alt="">
+                </div>
+                <div class="client-details">
+                    <p>Emanuelle Santiago - 37 anos <br> Última Consulta em 18/02/2022</p>
+                </div>
+                <div class="client-buttons">
+                    <button mat-icon-button color="primary">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="search-input">
-                <mat-form-field appearance="standard" floatLabel="never">
-                    <mat-icon matSuffix>search</mat-icon>
-                    <mat-label>Buscar cliente pelo nome</mat-label>
-                    <input matInput>
-                </mat-form-field>
-            </div>
-        </div>
-        <div class="client-data">
-            <div class="client-image">
-                <img src="../assets/user2.png" style="height: 60px; width: 60px;" alt="">
-            </div>
-            <div class="client-details">
-                <p>Emanuelle Santiago - 37 anos <br> Última Consulta em 18/02/2022</p>
-            </div>
-            <div class="client-buttons">
-                <button mat-icon-button color="primary">
-                    <mat-icon>edit</mat-icon>
-                </button>
-
-
-            </div>
-        </div>
-    </div>
-</div>
+</app-wrapper>

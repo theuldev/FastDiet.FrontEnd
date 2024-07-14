@@ -29,3 +29,7 @@
   background: #4e4e4e;
   border-radius: 10px;
 }
+:host{
+  display: block;
+  height: 100vh !important;
+}

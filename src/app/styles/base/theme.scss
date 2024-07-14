@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+
+$primary-palette: mat.$blue-grey-palette;
+$theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$primary-palette,
+  ),
+  typography: (
+    brand-family: 'Comic Sans',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+
+@include mat.core-theme($theme);

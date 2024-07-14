@@ -1,54 +1,60 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="title">
-                <h1>ADICIONAR MINHA AGENDA</h1>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <form action="">
-                <mat-form-field class="field-date-initial" appearance="standard">
-           
-                </mat-form-field>
-
-                <mat-form-field class="field-date-final" appearance="standard">
-                    <mat-label>Data e Horário Final *</mat-label>
-               
-                </mat-form-field>
-                <mat-form-field class="field-local" appearance="standard">
-                    <mat-label>Nome do Local de Atendimento *</mat-label>
-                    <mat-select>
-                        <mat-option value="1">
-                            Cabula
-                        </mat-option>
-                        <mat-option value="2">
-                            Sussuarana
-                        </mat-option>
-                        <mat-option value="3">
-                            IAPI
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </form>
-        </div>
-        <div class="col-6">
-            <div class="calendar">
-                calendar
-            </div>
-
-        </div>
-        <div class="col-12">
-            <div class="btn-group">
-                <div class="btn-cancel">
-                    <button routerLink="/dashboard" mat-stroked-button color="warn">Cancelar</button>
+<app-wrapper>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h1>ADICIONAR MINHA AGENDA</h1>
                 </div>
-                <div class="btn-save">
-                    <button mat-raised-button color="primary">Salvar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form action="">
+                    <mat-form-field class="field-date-initial" appearance="outline">
+                        <mat-label>Data e Horario Inicial *</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-date-final" appearance="outline">
+                        <mat-label>Data e Horário Final *</mat-label>
+                        <input type="date" matInput>
+                    </mat-form-field>
+                    <mat-form-field class="field-local" appearance="outline">
+                        <mat-label>Nome do Local de Atendimento *</mat-label>
+                        <mat-select>
+                            <mat-option value="1">
+                                Cabula
+                            </mat-option>
+                            <mat-option value="2">
+                                Sussuarana
+                            </mat-option>
+                            <mat-option value="3">
+                                IAPI
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="calendar">
+                    calendar
                 </div>
 
             </div>
+            <div class="col-12">
+                <div class="btn-group">
+                    <div class="btn-cancel">
+                        <button routerLink="/dashboard" mat-stroked-button color="warn">Cancelar</button>
+                    </div>
+                    <div class="btn-save">
+                        <button mat-raised-button color="primary">Salvar</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</app-wrapper>

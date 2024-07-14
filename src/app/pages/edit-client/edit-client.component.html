@@ -1,220 +1,222 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="header">
-                <div class="title">
-                    EDITAR CLIENTE
+<app-wrapper>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <div class="title">
+                        EDITAR CLIENTE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <mat-form-field class="field-name" appearance="fill">
+                    <mat-label>
+                        Nome Completo*
+                    </mat-label>
+                    <input type="text" matInput placeholder="Name">
+                </mat-form-field>
+    
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-birthdate" appearance="fill">
+                    <mat-label>Data de Nascimento</mat-label>
+        
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-cpf" appearance="fill">
+                    <mat-label>
+                        CPF
+                    </mat-label>
+                    <input type="text" matInput placeholder="CPF">
+                </mat-form-field>
+    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <mat-form-field class="field-gender" appearance="fill">
+                    <mat-label>Sexo*</mat-label>
+                    <mat-select>
+                        <mat-option value="1">First option</mat-option>
+                        <mat-option value="2">Second option</mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+    
+                <mat-form-field class="field-pregnant" appearance="fill">
+                    <mat-label>Gestante*</mat-label>
+                    <mat-select>
+                        <mat-option value="1">Sim</mat-option>
+                        <mat-option value="2">Não</mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+    
+                <mat-form-field class="field-lactating" appearance="fill">
+                    <mat-label>Lactante?*</mat-label>
+                    <mat-select>
+                        <mat-option value="1">Sim</mat-option>
+                        <mat-option value="2">Não</mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+                <mat-form-field class="field-athlete" appearance="fill">
+                    <mat-label>Atleta*</mat-label>
+                    <mat-select>
+                        <mat-option value="1">Sim</mat-option>
+                        <mat-option value="2">Não</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <mat-form-field class="field-career" appearance="fill">
+                    <mat-label>
+                        Profissão:
+                    </mat-label>
+                    <input type="text" matInput placeholder="Profissão">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="field-health-insurance" appearance="fill">
+                    <mat-label>
+                        Convênio:
+                    </mat-label>
+                    <input type="text" matInput placeholder="Convênio">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <mat-form-field class="field-email" appearance="fill">
+                    <mat-label>
+                        Email
+                    </mat-label>
+                    <input type="email" matInput placeholder="Email">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-phone" appearance="fill">
+                    <mat-label>
+                        Telefone
+                    </mat-label>
+                    <input type="tel" matInput placeholder="Telefone">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-cell" appearance="fill">
+                    <mat-label>
+                        Celular
+                    </mat-label>
+                    <input type="tel" matInput placeholder="Celular">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <mat-form-field class="field-cep" appearance="fill">
+                    <mat-label>
+                        CEP
+                    </mat-label>
+                    <input type="text" matInput placeholder="CEP">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-state" appearance="fill">
+                    <mat-label>
+                        Estado
+                    </mat-label>    
+                    <input type="text" matInput placeholder="Estado">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field class="field-city" appearance="fill">
+                    <mat-label>
+                        Cidade
+                    </mat-label>
+                    <input type="text" matInput placeholder="Cidade">
+                </mat-form-field>
+            </div>
+    
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <mat-form-field class="field-address" appearance="fill">
+                    <mat-label>
+                        Endereço
+                    </mat-label>
+                    <input type="text" matInput placeholder="Endereço">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="field-number" appearance="fill">
+                    <mat-label>
+                        Número
+                    </mat-label>
+                    <input type="text" maxlength="2" matInput placeholder="Número">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <mat-form-field class="field-address-complement" appearance="fill">
+                    <mat-label>
+                        Complemento
+                    </mat-label>
+                    <input type="text" matInput placeholder="Complemento">
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="field-district" appearance="fill">
+                    <mat-label>
+                        Bairro
+                    </mat-label>
+                    <input type="text" matInput placeholder="Bairro">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="remember-login">
+                    Deseja cadastrar login e senha para APP?<mat-slide-toggle></mat-slide-toggle>
+                </div>
+            </div>
+            <div class="col-3">
+                <mat-form-field class="field-login" appearance="fill">
+                    <mat-label>
+                        Login
+                    </mat-label>
+                    <input type="text" matInput placeholder="Login">
+                </mat-form-field>
+            </div>
+            <div class="col-3">
+                <mat-form-field class="field-password" appearance="fill">
+                    <mat-label>
+                        Senha
+                    </mat-label>
+                    <input type="text" matInput placeholder="Senha">
+                </mat-form-field>
+            </div>
+    
+        </div>
+        <div class="row">
+            <div class="col-12">
+                  <div class="send-email">
+                    Deseja enviar email de boas vindas?<mat-slide-toggle></mat-slide-toggle>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group">
+                     <button mat-raised-button color="primary" class="button-send" routerLink="/dashboard">Salvar</button>
+                      <button mat-raised-button color="primary" class="button-cancel" routerLink="/dashboard">Cancelar</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <mat-form-field class="field-name" appearance="fill">
-                <mat-label>
-                    Nome Completo*
-                </mat-label>
-                <input type="text" matInput placeholder="Name">
-            </mat-form-field>
-
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-birthdate" appearance="fill">
-                <mat-label>Data de Nascimento</mat-label>
-    
-            </mat-form-field>
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-cpf" appearance="fill">
-                <mat-label>
-                    CPF
-                </mat-label>
-                <input type="text" matInput placeholder="CPF">
-            </mat-form-field>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <mat-form-field class="field-gender" appearance="fill">
-                <mat-label>Sexo*</mat-label>
-                <mat-select>
-                    <mat-option value="1">First option</mat-option>
-                    <mat-option value="2">Second option</mat-option>
-                </mat-select>
-            </mat-form-field>
-
-
-            <mat-form-field class="field-pregnant" appearance="fill">
-                <mat-label>Gestante*</mat-label>
-                <mat-select>
-                    <mat-option value="1">Sim</mat-option>
-                    <mat-option value="2">Não</mat-option>
-                </mat-select>
-            </mat-form-field>
-
-
-            <mat-form-field class="field-lactating" appearance="fill">
-                <mat-label>Lactante?*</mat-label>
-                <mat-select>
-                    <mat-option value="1">Sim</mat-option>
-                    <mat-option value="2">Não</mat-option>
-                </mat-select>
-            </mat-form-field>
-
-            <mat-form-field class="field-athlete" appearance="fill">
-                <mat-label>Atleta*</mat-label>
-                <mat-select>
-                    <mat-option value="1">Sim</mat-option>
-                    <mat-option value="2">Não</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <mat-form-field class="field-career" appearance="fill">
-                <mat-label>
-                    Profissão:
-                </mat-label>
-                <input type="text" matInput placeholder="Profissão">
-            </mat-form-field>
-        </div>
-        <div class="col-6">
-            <mat-form-field class="field-health-insurance" appearance="fill">
-                <mat-label>
-                    Convênio:
-                </mat-label>
-                <input type="text" matInput placeholder="Convênio">
-            </mat-form-field>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <mat-form-field class="field-email" appearance="fill">
-                <mat-label>
-                    Email
-                </mat-label>
-                <input type="email" matInput placeholder="Email">
-            </mat-form-field>
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-phone" appearance="fill">
-                <mat-label>
-                    Telefone
-                </mat-label>
-                <input type="tel" matInput placeholder="Telefone">
-            </mat-form-field>
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-cell" appearance="fill">
-                <mat-label>
-                    Celular
-                </mat-label>
-                <input type="tel" matInput placeholder="Celular">
-            </mat-form-field>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <mat-form-field class="field-cep" appearance="fill">
-                <mat-label>
-                    CEP
-                </mat-label>
-                <input type="text" matInput placeholder="CEP">
-            </mat-form-field>
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-state" appearance="fill">
-                <mat-label>
-                    Estado
-                </mat-label>    
-                <input type="text" matInput placeholder="Estado">
-            </mat-form-field>
-        </div>
-        <div class="col-4">
-            <mat-form-field class="field-city" appearance="fill">
-                <mat-label>
-                    Cidade
-                </mat-label>
-                <input type="text" matInput placeholder="Cidade">
-            </mat-form-field>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <mat-form-field class="field-address" appearance="fill">
-                <mat-label>
-                    Endereço
-                </mat-label>
-                <input type="text" matInput placeholder="Endereço">
-            </mat-form-field>
-        </div>
-        <div class="col-6">
-            <mat-form-field class="field-number" appearance="fill">
-                <mat-label>
-                    Número
-                </mat-label>
-                <input type="text" maxlength="2" matInput placeholder="Número">
-            </mat-form-field>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <mat-form-field class="field-address-complement" appearance="fill">
-                <mat-label>
-                    Complemento
-                </mat-label>
-                <input type="text" matInput placeholder="Complemento">
-            </mat-form-field>
-        </div>
-        <div class="col-6">
-            <mat-form-field class="field-district" appearance="fill">
-                <mat-label>
-                    Bairro
-                </mat-label>
-                <input type="text" matInput placeholder="Bairro">
-            </mat-form-field>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <div class="remember-login">
-                Deseja cadastrar login e senha para APP?<mat-slide-toggle></mat-slide-toggle>
-            </div>
-        </div>
-        <div class="col-3">
-            <mat-form-field class="field-login" appearance="fill">
-                <mat-label>
-                    Login
-                </mat-label>
-                <input type="text" matInput placeholder="Login">
-            </mat-form-field>
-        </div>
-        <div class="col-3">
-            <mat-form-field class="field-password" appearance="fill">
-                <mat-label>
-                    Senha
-                </mat-label>
-                <input type="text" matInput placeholder="Senha">
-            </mat-form-field>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-12">
-              <div class="send-email">
-                Deseja enviar email de boas vindas?<mat-slide-toggle></mat-slide-toggle>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="btn-group">
-                 <button mat-raised-button color="primary" class="button-send" routerLink="/dashboard">Salvar</button>
-                  <button mat-raised-button color="primary" class="button-cancel" routerLink="/dashboard">Cancelar</button>
-            </div>
-        </div>
-    </div>
-</div>
+</app-wrapper>

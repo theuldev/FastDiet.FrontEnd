@@ -31,7 +31,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./src/app/styles/main.scss",
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": []
           },
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ExpertNutri.FrontEnd:build:production"
+              "buildTarget": "ExpertNutri.FrontEnd:build:production"
             },
             "development": {
-              "browserTarget": "ExpertNutri.FrontEnd:build:development"
+              "buildTarget": "ExpertNutri.FrontEnd:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ExpertNutri.FrontEnd:build"
+            "buildTarget": "ExpertNutri.FrontEnd:build"
           }
         },
         "test": {

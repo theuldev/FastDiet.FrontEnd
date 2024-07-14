@@ -1,4 +1,7 @@
-
+:host{
+    display: block;
+    height: 100%;
+    
 mat-icon {
     color: white;
 }
@@ -64,4 +67,5 @@ mat-form-field
     text-align: center;
     font-weight: bold;
     font-style: italic;
+}
 }

@@ -121,7 +121,7 @@
                 </mat-accordion>
             </mat-list>
         </mat-sidenav>
-        <mat-sidenav-content>
+        <mat-sidenav-content class="sidenav-content">
             <mat-toolbar color="primary">
                 <button mat-icon-button color="basic" (click)="opended=!opended">
                     <mat-icon *ngIf="!opended">menu</mat-icon>
@@ -136,7 +136,7 @@
                 </div>
 
                 <span class="spacer"></span>
-                <button mat-button [matMenuTriggerFor]="menu">
+                <button mat-button [matMenuTriggerFor]="menu" class="avatar">
                     <img src="../assets/user.png" class="user_image" style="height: 60px; width: 60px;" alt="user">
                     <span>
                         Emanuelly Santiago

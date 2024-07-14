@@ -9,7 +9,8 @@ import { UsersModule } from '../users/users.module';
   declarations: [
   ],
   imports: [
-    UsersModule
+    UsersModule,
+    
 
   ],
   exports: [],
